@@ -61,7 +61,7 @@ void deleteElement(int array[SIZE][SIZE], int row, int col)
 {
     if (row >= 0 && row < SIZE && col >= 0 && col < SIZE)
     {
-        array[row][col] = 0; // Assuming 0 as a placeholder for deletion
+        array[row][col] = 0;
     }
     else
     {
@@ -75,7 +75,6 @@ int main()
 
     int array[SIZE][SIZE];
 
-    // Fill the array with random values
     for (int i = 0; i < SIZE; i++)
     {
         for (int j = 0; j < SIZE; j++)

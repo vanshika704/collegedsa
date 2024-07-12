@@ -92,7 +92,7 @@ int main()
         cout << "3. Sum of all elements\n";
         cout << "4. Insertion\n";
         cout << "5. Deletion\n";
-        cout << "6. Exit\n";
+
         cout << "Enter your choice: ";
         cin >> choice;
 
@@ -147,9 +147,7 @@ int main()
             traversal(array);
             break;
         }
-        case 6:
-            cout << "Exiting..." << endl;
-            break;
+
         default:
             cout << "Invalid choice! Please try again." << endl;
         }

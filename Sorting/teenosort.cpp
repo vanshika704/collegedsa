@@ -41,6 +41,25 @@ void bubble_sort(int arr[], int n) {
 
 
 }
+int insertionsort (int arr[], int n){
+  for (int i = 0; i< n ; i++){
+      int j = i;
+        while (j > 0 && arr[j - 1] > arr[j]) {
+            int temp = arr[j - 1];
+            arr[j - 1] = arr[j];
+            arr[j] = temp;
+            j--;
+        }
+        
+
+  }
+   cout << "After insertion sort: " << "\n";
+  for (int i = 0; i < n; i++) {
+    cout << arr[i] << " ";
+  }
+  cout << "\n";
+}
+
 int main() {
   int arr[] = {13,46,24,52,20,9};
   int n = sizeof(arr) / sizeof(arr[0]);
@@ -50,6 +69,7 @@ int main() {
   }
   cout << "\n";
   selection_sort(arr, n);
-  bubble_sort(arr, n);
+  bubble_sort(arr, n); 
+  insertionsort(arr, n);
   return 0;
 }
